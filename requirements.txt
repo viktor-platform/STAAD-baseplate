@@ -1,0 +1,3 @@
+viktor==14.19.0
+meshpy
+matplotlib
