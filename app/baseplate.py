@@ -516,6 +516,7 @@ class TubularBasePlateModel(BaseModel):
             tol=1e-8
         )
         # Append extra support nodes in a fixed order:
+        # This nodes are not connected but will be used to constraint the model in STAAD
         # First: bolt centers (middle of each hole, in order).
         # Last: cylinder top center.
         bolt_centers: list[tuple[float, float]] = CircularPlate.generate_radial_hole_centers(
